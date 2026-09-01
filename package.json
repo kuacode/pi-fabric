@@ -1,0 +1,31 @@
+{
+  "name": "pi-fabric-plus",
+  "version": "0.1.0",
+  "description": "External zero-conflict enhancements for pi-fabric.",
+  "type": "module",
+  "main": "./extensions/index.js",
+  "files": [
+    "extensions/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-fabric"
+  ],
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "./extensions/index.js"
+    ]
+  },
+  "peerDependencies": {
+    "pi-fabric": "*"
+  },
+  "peerDependenciesMeta": {
+    "pi-fabric": {
+      "optional": true
+    }
+  }
+}

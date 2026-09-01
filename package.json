@@ -1,7 +1,7 @@
 {
   "name": "pi-fabric-plus",
-  "version": "0.1.0",
-  "description": "External zero-conflict enhancements for pi-fabric.",
+  "version": "0.1.1",
+  "description": "Pi package that loads upstream pi-fabric and adds zero-conflict Kuacode enhancements.",
   "type": "module",
   "main": "./extensions/index.js",
   "files": [
@@ -17,15 +17,14 @@
   "license": "MIT",
   "pi": {
     "extensions": [
+      "./node_modules/pi-fabric/dist/index.js",
       "./extensions/index.js"
+    ],
+    "skills": [
+      "./node_modules/pi-fabric/skills"
     ]
   },
-  "peerDependencies": {
-    "pi-fabric": "*"
-  },
-  "peerDependenciesMeta": {
-    "pi-fabric": {
-      "optional": true
-    }
+  "dependencies": {
+    "pi-fabric": "^0.70.0"
   }
 }
